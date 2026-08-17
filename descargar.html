@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumina — Descargar</title>
+  <title>Lumina 1.0.2 — Descargar</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:system-ui,-apple-system,sans-serif;background:#0e0e12;color:#e4e4e7;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:2rem}
     h1{font-size:1.8rem;font-weight:600;margin-bottom:.3rem}
-    .sub{color:#888;font-size:.9rem;margin-bottom:2.5rem}
+    .sub{color:#888;font-size:.9rem;margin-bottom:.3rem}
+    .ver{color:#6c63ff;font-size:.8rem;margin-bottom:2.5rem;font-weight:500}
     .cards{display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center}
     .card{background:#1a1a22;border:1px solid #2a2a35;border-radius:12px;padding:1.8rem 2rem;width:260px;text-align:center;transition:border-color .2s}
     .card:hover{border-color:#6c63ff}
@@ -17,36 +18,47 @@
     .card p{font-size:.82rem;color:#888;line-height:1.4;margin-bottom:1.2rem}
     .card a{display:inline-block;padding:.55rem 1.4rem;background:#6c63ff;color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;font-weight:500;transition:background .2s}
     .card a:hover{background:#5a52e0}
-    .note{margin-top:2rem;font-size:.75rem;color:#555;text-align:center;max-width:400px;line-height:1.5}
+    .note{margin-top:2rem;font-size:.75rem;color:#555;text-align:center;max-width:420px;line-height:1.5}
+    .api{margin-top:1.5rem;background:#1a1a2e;border:1px solid #3a3a55;border-radius:10px;padding:1rem 1.5rem;max-width:420px;text-align:center;font-size:.82rem;color:#aaa;line-height:1.5}
+    .api strong{color:#8b83ff}
+    .api a{color:#8b83ff;text-decoration:none}
+    .api a:hover{text-decoration:underline}
   </style>
 </head>
 <body>
   <h1>Lumina</h1>
-  <p class="sub">Tu asistente personal con IA local</p>
+  <p class="sub">Tu asistente personal con IA</p>
+  <p class="ver">v1.0.2</p>
 
   <div class="cards">
     <div class="card">
       <h2>Windows</h2>
       <p class="os">Electron</p>
-      <p>App de escritorio portable. Extrae y ejecuta.</p>
-      <a href="https://github.com/andrescolmenarezj22-crypto/lumina-download/releases/download/v1.1.0/Lumina-Windows-portable.zip">Descargar .zip</a>
+      <p>App de escritorio portable. Extraé y ejecutá.</p>
+      <a href="https://github.com/andrescolmenarezj22-crypto/lumina-download/releases/download/v1.0.2/Lumina-Windows-portable.zip">Descargar .zip</a>
     </div>
 
     <div class="card">
       <h2>Android</h2>
       <p class="os">PWA</p>
-      <p>Necesitás tener Lumina corriendo en tu PC. Abrí en Chrome y pulsá "Añadir a pantalla".</p>
+      <p>Necesitás Lumina corriendo en tu PC. Abrí en Chrome y pulsá "Añadir a pantalla".</p>
       <a href="https://192.168.1.104:8443/app">Abrir Lumina</a>
     </div>
 
     <div class="card">
       <h2>iOS</h2>
       <p class="os">PWA</p>
-      <p>Necesitás tener Lumina corriendo en tu PC. Abrí en Safari y pulsá "Compartir → Añadir a pantalla".</p>
+      <p>Necesitás Lumina corriendo en tu PC. Abrí en Safari y pulsá "Compartir → Añadir a pantalla".</p>
       <a href="https://192.168.1.104:8443/app">Abrir Lumina</a>
     </div>
   </div>
 
-  <p class="note">Windows: descargá, extraé y ejecutá Lumina.exe. Android/iOS: necesitás estar en la misma red WiFi. La app funciona con o sin internet.</p>
+  <div class="api">
+    <strong>Necesitás una API key de Grok</strong> para que Lumina responda preguntas.
+    Es gratis en <a href="https://console.x.ai" target="_blank" rel="noopener">console.x.ai</a>.
+    Se configura en Ajustes de la app.
+  </div>
+
+  <p class="note">Windows: descargá, extraé y ejecutá Lumina.exe. Android/iOS: necesitás estar en la misma red WiFi. La key de Grok se guarda solo en tu dispositivo.</p>
 </body>
 </html>
