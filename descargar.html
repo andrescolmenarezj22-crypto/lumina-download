@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina — Descargar</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,sans-serif;background:#0e0e12;color:#e4e4e7;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:2rem}
+    h1{font-size:1.8rem;font-weight:600;margin-bottom:.3rem}
+    .sub{color:#888;font-size:.9rem;margin-bottom:2.5rem}
+    .cards{display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center}
+    .card{background:#1a1a22;border:1px solid #2a2a35;border-radius:12px;padding:1.8rem 2rem;width:260px;text-align:center;transition:border-color .2s}
+    .card:hover{border-color:#6c63ff}
+    .card h2{font-size:1.1rem;margin-bottom:.4rem}
+    .card .os{color:#6c63ff;font-size:.8rem;margin-bottom:1rem}
+    .card p{font-size:.82rem;color:#888;line-height:1.4;margin-bottom:1.2rem}
+    .card a{display:inline-block;padding:.55rem 1.4rem;background:#6c63ff;color:#fff;text-decoration:none;border-radius:8px;font-size:.85rem;font-weight:500;transition:background .2s}
+    .card a:hover{background:#5a52e0}
+    .note{margin-top:2rem;font-size:.75rem;color:#555;text-align:center;max-width:400px;line-height:1.5}
+  </style>
+</head>
+<body>
+  <h1>Lumina</h1>
+  <p class="sub">Tu asistente personal con IA local</p>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Windows</h2>
+      <p class="os">Electron</p>
+      <p>App de escritorio portable. Extrae y ejecuta.</p>
+      <a href="https://files.catbox.moe/orc6vw.zip">Descargar .zip</a>
+    </div>
+
+    <div class="card">
+      <h2>Android</h2>
+      <p class="os">PWA</p>
+      <p>Abrí el enlace en Chrome y pulsá "Añadir a pantalla".</p>
+      <a href="https://192.168.1.104:8443/app">Abrir Lumina</a>
+    </div>
+
+    <div class="card">
+      <h2>iOS</h2>
+      <p class="os">PWA</p>
+      <p>Abrí en Safari y pulsá "Compartir → Añadir a pantalla".</p>
+      <a href="https://192.168.1.104:8443/app">Abrir Lumina</a>
+    </div>
+  </div>
+
+  <p class="note">Windows: descargá, extraé y ejecutá Lumina.exe. Android/iOS: necesitás estar en la misma red WiFi. La app funciona con o sin internet.</p>
+</body>
+</html>
